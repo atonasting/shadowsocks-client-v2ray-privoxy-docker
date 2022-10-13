@@ -1,6 +1,7 @@
 # shadowsocks client with v2ray-plugin and privoxy
 
 容器化的shadowsocks客户端。
+
 仅提供了基于v2ray的websocket这一种方式运行，并且内置了privoxy代理，同时支持http和socks5代理。
 
 这里只提供Dockerfile，不包含image。
@@ -9,6 +10,7 @@
 
 ## 默认配置
 http端口: 10000
+
 socks5端口: 10001
 
 ## docker compose示例
@@ -29,3 +31,8 @@ services:
       PASSWORD: <your-password>
       SERVER_PATH: <your-serverv2ray-path (start with /)>      
 ```
+
+## 引用
+https://github.com/shadowsocks/shadowsocks-libev
+https://github.com/shadowsocks/v2ray-plugin
+https://www.privoxy.org/
