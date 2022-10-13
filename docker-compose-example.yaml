@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  ss-local:
+    image: <your-ss-local-image-name>
+    container_name: ss-local
+    restart: always
+    ports:
+      - <your-http-proxy-port>:10000
+      - <your-socks5-proxy-port>:10001
+    environment:
+      SERVER_ADDR: <your-server-domain>
+      SERVER_PORT: <your-server-port (default 443)>
+      PASSWORD: <your-password>
+      SERVER_PATH: <your-serverv2ray-path (start with /)>      
