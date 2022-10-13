@@ -1,0 +1,2 @@
+# shadowsocks-client-v2ray-privoxy-docker
+容器化的shadowsocks客户端，基于v2ray插件和websocket，使用privoxy提供http代理
