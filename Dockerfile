@@ -11,6 +11,7 @@ COPY ./config/* /etc/config/
 
 ENV SERVER_PORT=443
 ENV METHOD=chacha20-ietf-poly1305
+ENV TIMEOUT=300
 ENV SERVER_PATH=/
 
 EXPOSE 10000
